@@ -1,25 +1,37 @@
 ---
 export interface Props {
+	name: string;
 	title: string;
+	image: string;
 	body: string;
-	href: string;
+	github?: string;
+	linkedin?: string;
+	website?: string;
 }
 
-const { href, title, body } = Astro.props;
+const { name, title, image, body, github, linkedin, website } = Astro.props;
 ---
+<div class='w-64 bg-slate-100 flex flex-col items-center border-1 hover:scale-105 border-slate-500/50 rounded-lg shadow-lg shadow-slate-400/50 hover:shadow-slate-500/50 p-2 m-16'>
+	<img src={image} class='border-1 border-slate-500/90 shadow-lg rounded-full object-cover w-[200px] h-[200px] overflow-hidden'/>
+	<h1 class='text-center'>
+		{title}
+	</h1>
+	<h2 class='text-center'>
+		{name}
+	</h2>
+	<p class=''>
+		{body}
+	</p>
+	<ul class='list-none flex justify-center'>
+		<li class='px-2'><a href={github} class='' target='_blank'><img src='../../public/icons/github.svg' class='w-6 h-auto'></a></li>
+		<li class='px-2'><a href={linkedin} class='' target='_blank'><img src='../../public/icons/linkedin.svg' class='w-6 h-auto'></a></li>
+		<li class='px-2'><a href={website} class='' target='_blank'><img src='../../public/icons/user-solid.svg' class='w-6 h-auto'></a></li>
+	</ul>
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
-<style>
+	
+	
+</div>
+<!-- <style>
 	.link-card {
 		list-style: none;
 		display: flex;
@@ -59,4 +71,4 @@ const { href, title, body } = Astro.props;
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent));
 	}
-</style>
+</style> -->
