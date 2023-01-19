@@ -11,21 +11,21 @@ export interface Props {
 
 const { name, title, image, body, github, linkedin, website } = Astro.props;
 ---
-<div class='w-64 bg-slate-100 flex flex-col items-center border-1 hover:scale-105 border-slate-500/50 rounded-lg shadow-lg shadow-slate-400/50 hover:shadow-slate-500/50 p-2 m-16'>
-	<img src={image} class='border-1 border-slate-500/90 shadow-lg rounded-full object-cover w-[200px] h-[200px] overflow-hidden'/>
-	<h1 class='text-center'>
-		{title}
-	</h1>
+<div class='w-64 h-[24rem] bg-slate-100 flex flex-col items-center border-1 hover:scale-105 border-slate-500/50 rounded-lg shadow-lg shadow-slate-400/50 hover:shadow-slate-500/50 p-2 m-16'>
+	<img src={image} class='border-1 border-slate-500/90 shadow-lg rounded-full object-cover w-[180px] h-[180px] overflow-hidden'/>
 	<h2 class='text-center'>
-		{name}
+		{title}
 	</h2>
-	<p class=''>
+	<h3 class='text-center'>
+		{name}
+	</h3>
+	<p class='h-[96px]'>
 		{body}
 	</p>
-	<ul class='list-none flex justify-center'>
-		<li class='px-2'><a href={github} class='' target='_blank'><img src='../../public/icons/github.svg' class='w-6 h-auto'></a></li>
-		<li class='px-2'><a href={linkedin} class='' target='_blank'><img src='../../public/icons/linkedin.svg' class='w-6 h-auto'></a></li>
-		<li class='px-2'><a href={website} class='' target='_blank'><img src='../../public/icons/user-solid.svg' class='w-6 h-auto'></a></li>
+	<ul class='list-none flex justify-center py-1'>
+		<li class='px-2'><a href={github} class='' target='_blank'><img src='/icons/github.svg' class='w-6 h-auto'></a></li>
+		<li class='px-2'><a href={linkedin} class='' target='_blank'><img src='/icons/linkedin.svg' class='w-6 h-auto'></a></li>
+		<li class='px-2'><a href={website} class='' target='_blank'><img src='/icons/user-solid.svg' class='w-6 h-auto'></a></li>
 	</ul>
 
 	

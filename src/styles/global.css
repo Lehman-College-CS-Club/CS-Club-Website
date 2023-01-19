@@ -11,4 +11,8 @@
     @apply text-xl;
     @apply font-bold;
   }
+  h3 {
+    @apply text-lg;
+    @apply font-bold;
+  }
 }
