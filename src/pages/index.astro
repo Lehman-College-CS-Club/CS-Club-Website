@@ -5,15 +5,15 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Lehman College Computer Science Club.">
 	<!-- <main> -->
 	    {/* Welcome Section */}
-		<div class='flex justify-center items-center p-5 width-full'>
-			<div class='max-w-prose'>
-			  <h1>The Lehman College Computer Science Club</h1>
+		<div class='flex justify-around items-center my-9'>
+			<div class='max-w-prose ml-9'>
+			  <h1 class=''>The Lehman College Computer Science Club</h1>
 			  <p class='py-4'>A club dedicated to bringing Computer Science students together. Our goal is to provide an inclusive and supportive environment. We aim to host exciting and interesting events that will help students gain the necessary skills to succeed.</p>
 			  <div class='my-4'><a class='text-lg text-white font-bold px-3 py-2 outline outline-offset-0 outline-blue-500 bg-blue-300 hover:bg-blue-500 rounded-md' href='https://docs.google.com/forms/d/e/1FAIpQLSegGh7jgVYMj4B3ikJ5UxJwmWjN9P5q36-EFviz1Es2ua59Uw/viewform' target='_blank'>Join the club!</a></div>
 			</div>
-			<div class="welcome-pic-container">
+			<div class="max-h-prose mr-9">
 			  <img
-				class='rounded-2xl'
+				class='rounded-2xl shadow-lg shadow-slate-500/30 border-1'
 				src="/images/club_photo.png"
 				alt="Club Photo"
 				width={800}
@@ -23,21 +23,27 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	  
 		{/* About Section */}
-		<div class='items-center p-5 width-full'>
-			<h1>Want to know more about us?</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non urna sit amet urna sollicitudin consequat. Praesent quis placerat lorem. Pellentesque aliquam nisi dui, ac semper arcu dapibus auctor. Mauris condimentum diam porta, luctus nibh eu, fermentum est. Mauris scelerisque, sem a dapibus lacinia, nulla enim faucibus nibh, non tempus nulla risus eu sapien. Nulla facilisi. Phasellus mi urna, tincidunt et turpis at, venenatis mattis nibh. Integer nec ligula metus. Donec ultrices magna ex. Integer lobortis, ante a rhoncus auctor, elit dolor maximus ipsum, sed efficitur ex mauris ac leo. Donec mauris eros, tristique vitae libero vitae, sagittis fermentum libero.</p>
+		<div class='bg-slate-500/30 flex flex-col justify-center items-center py-9'>
+			<div class='max-w-prose'>
+				<h1 class=''>Want to know more about us?</h1>
+				<p class='py-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non urna sit amet urna sollicitudin consequat. Praesent quis placerat lorem. Pellentesque aliquam nisi dui, ac semper arcu dapibus auctor. Mauris condimentum diam porta, luctus nibh eu, fermentum est. Mauris scelerisque, sem a dapibus lacinia, nulla enim faucibus nibh, non tempus nulla risus eu sapien. Nulla facilisi. Phasellus mi urna, tincidunt et turpis at, venenatis mattis nibh. Integer nec ligula metus. Donec ultrices magna ex. Integer lobortis, ante a rhoncus auctor, elit dolor maximus ipsum, sed efficitur ex mauris ac leo. Donec mauris eros, tristique vitae libero vitae, sagittis fermentum libero.</p>
+			</div>
 		</div>
 	  
 		{/* Events Section */}
-		<div class='items-center p-5 width-full'>
-			<h1>Upcoming Events</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non urna sit amet urna sollicitudin consequat. Praesent quis placerat lorem. Pellentesque aliquam nisi dui, ac semper arcu dapibus auctor. Mauris condimentum diam porta, luctus nibh eu, fermentum est. Mauris scelerisque, sem a dapibus lacinia, nulla enim faucibus nibh, non tempus nulla risus eu sapien. Nulla facilisi. Phasellus mi urna, tincidunt et turpis at, venenatis mattis nibh. Integer nec ligula metus. Donec ultrices magna ex. Integer lobortis, ante a rhoncus auctor, elit dolor maximus ipsum, sed efficitur ex mauris ac leo. Donec mauris eros, tristique vitae libero vitae, sagittis fermentum libero.</p>
+		<div class='flex flex-col justify-center items-center py-9'>
+			<div class='max-w-prose'>
+				<h1 class=''>Upcoming Events</h1>
+				<p class='py-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non urna sit amet urna sollicitudin consequat. Praesent quis placerat lorem. Pellentesque aliquam nisi dui, ac semper arcu dapibus auctor. Mauris condimentum diam porta, luctus nibh eu, fermentum est. Mauris scelerisque, sem a dapibus lacinia, nulla enim faucibus nibh, non tempus nulla risus eu sapien. Nulla facilisi. Phasellus mi urna, tincidunt et turpis at, venenatis mattis nibh. Integer nec ligula metus. Donec ultrices magna ex. Integer lobortis, ante a rhoncus auctor, elit dolor maximus ipsum, sed efficitur ex mauris ac leo. Donec mauris eros, tristique vitae libero vitae, sagittis fermentum libero.</p>
+			</div>
 		</div>
 	  
 		{/* Resources Section */}
-		<div class='items-center p-5 width-full'>
-			<h1>Check out these resources!</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non urna sit amet urna sollicitudin consequat. Praesent quis placerat lorem. Pellentesque aliquam nisi dui, ac semper arcu dapibus auctor. Mauris condimentum diam porta, luctus nibh eu, fermentum est. Mauris scelerisque, sem a dapibus lacinia, nulla enim faucibus nibh, non tempus nulla risus eu sapien. Nulla facilisi. Phasellus mi urna, tincidunt et turpis at, venenatis mattis nibh. Integer nec ligula metus. Donec ultrices magna ex. Integer lobortis, ante a rhoncus auctor, elit dolor maximus ipsum, sed efficitur ex mauris ac leo. Donec mauris eros, tristique vitae libero vitae, sagittis fermentum libero.</p>
+		<div class='bg-slate-500/30 flex flex-col justify-center items-center py-9'>
+			<div class='max-w-prose'>
+				<h1 class=''>Check out these resources!</h1>
+				<p class='py-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non urna sit amet urna sollicitudin consequat. Praesent quis placerat lorem. Pellentesque aliquam nisi dui, ac semper arcu dapibus auctor. Mauris condimentum diam porta, luctus nibh eu, fermentum est. Mauris scelerisque, sem a dapibus lacinia, nulla enim faucibus nibh, non tempus nulla risus eu sapien. Nulla facilisi. Phasellus mi urna, tincidunt et turpis at, venenatis mattis nibh. Integer nec ligula metus. Donec ultrices magna ex. Integer lobortis, ante a rhoncus auctor, elit dolor maximus ipsum, sed efficitur ex mauris ac leo. Donec mauris eros, tristique vitae libero vitae, sagittis fermentum libero.</p>
+			</div>
 		</div>
 	<!-- </main> -->
 </Layout>

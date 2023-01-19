@@ -15,4 +15,47 @@
     @apply text-lg;
     @apply font-bold;
   }
+  p {
+    @apply text-lg
+  }
+}
+
+@screen lg {
+  h1 {
+    @apply text-3xl;
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+  p {
+    @apply text-xl;
+  }
+}
+@screen xl {
+  h1 {
+    @apply text-3xl;
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+  p {
+    @apply text-xl;
+  }
+}
+@screen 2xl {
+  h1 {
+    @apply text-4xl;
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-3xl;
+    @apply font-bold;
+  }
+  p {
+    @apply text-2xl;
+  }
 }
