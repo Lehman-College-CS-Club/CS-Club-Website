@@ -23,9 +23,9 @@ const { name, title, image, body, github, linkedin, website } = Astro.props;
 		{body}
 	</p>
 	<ul class='list-none flex justify-center py-1'>
-		<li class='px-2'><a href={github} class='' target='_blank'><img src='/icons/github.svg' class='w-6 h-auto'></a></li>
-		<li class='px-2'><a href={linkedin} class='' target='_blank'><img src='/icons/linkedin.svg' class='w-6 h-auto'></a></li>
-		<li class='px-2'><a href={website} class='' target='_blank'><img src='/icons/user-solid.svg' class='w-6 h-auto'></a></li>
+		{github? <li class='px-2'><a href={github} class='' target='_blank'><img src='/icons/github.svg' class='w-6 h-auto'></a></li> : ""}
+		{linkedin? <li class='px-2'><a href={linkedin} class='' target='_blank'><img src='/icons/linkedin.svg' class='w-6 h-auto'></a></li> : ""}
+		{website? <li class='px-2'><a href={website} class='' target='_blank'><img src='/icons/user-solid.svg' class='w-6 h-auto'></a></li> : ""}
 	</ul>
 
 	

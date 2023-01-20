@@ -1,19 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Event from '../components/Event.astro'
 ---
 
 <Layout title="Lehman College Computer Science Club.">
-    
-    <h1>Upcoming Events</h1>
-    
-    <h2>January</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class='container prose mx-auto'>
+        <h1>Spring 2023 Events</h1>
 
-    <h2>February</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div>
+            <h2>February</h2>
+            <Event title='Intro to Github Workshop' description='Learn what Git and Github are, why they are used, and why they are important to know. Bring your own laptops and follow along and get your environment set up.' date='Friday, February 17th'/>
+        </div>
 
+        <div>
+            <h2>March</h2>
+            <h3>TBD...</h3>
+        </div>
+
+        <div>
+            <h2>April</h2>
+            <h3>TBD...</h3>
+        </div>
+
+    </div>
 </Layout>
