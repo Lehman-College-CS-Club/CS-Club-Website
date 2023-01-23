@@ -2,12 +2,13 @@
 export interface Props {
 	text: string;
 	link: string;
+    target?: string;
 }
 
-const { text, link } = Astro.props;
+const { text, link, target } = Astro.props;
 ---
-<div class='my-4'>
-    <a class='text-lg text-white font-bold px-3 py-2 outline outline-offset-0 outline-blue-500 bg-blue-300 hover:bg-blue-500 rounded-md' href={link} target='_blank'>
+<div class='join-button my-4 min-w-[132px]'>
+    <a class='text-white font-bold px-3 py-2 border-2 border-white bg-slate-700 hover:text-orange-400 hover:border-orange-400  rounded-md' href={link} target={target}>
         {text}
     </a>
 </div>

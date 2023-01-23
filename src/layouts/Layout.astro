@@ -29,12 +29,13 @@ const { title } = Astro.props;
 				document.querySelector('.nav-list').classList.toggle('flex-col');
 				document.querySelector('.navbar').classList.toggle('flex-col');
 				document.querySelector('.nav-list').classList.toggle('text-2xl');
+				document.querySelector('.join-button').classList.toggle('w-[184px]');
 			});
 		  </script>
 	</body>
 </html>
 
-<style is:global>
+<!-- <style is:global>
 	:root {
 		--accent: 124, 58, 237;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
@@ -47,4 +48,4 @@ const { title } = Astro.props;
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
-</style>
+</style> -->

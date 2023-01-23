@@ -1,10 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Profile from '../components/Profile-Card.astro';
 ---
 
 <Layout title="Lehman College Computer Science Club.">
-    <div class='container mx-auto flex flex-col justify-around items-center pb-4'>
+    <div class='container mx-auto flex flex-col justify-around items-center pb-4 lg:px-0 px-4'>
         <div class=''>
             <h1 class='my-4'>Who We Are</h1>
             <h2 class='my-4'>A group dedicated to bringing CS Students together.</h2>
@@ -13,67 +13,74 @@ import Card from '../components/Card.astro';
         <div class='container mx-auto'>
             <h1 class='my-4'>Executive Board Members</h1>
             <div class='flex flex-wrap justify-center'>
-                <Card
+                <Profile
                     name="Emily Portalatin-Mendez"
                     title="President"
                     image="/images/Portalatin-Mendez.jpg"
-                    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non urna sit amet urna sollicitudin consequat."
-                    github=""
-                    linkedin=""
+                    body="Scholar, published author, and software developer. I love coffee, coding, and my cat!"
+                    github="https://github.com/emilypmendez"
+                    linkedin="https://www.linkedin.com/in/emilypmendez/"
+                    website="https://www.emilypmendez.com"
                 />
 
-                <Card
+                <Profile
                     name="James A. Bosch"
                     title="Vice President"
                     image="/images/bosch.jpg"
                     body="Sup! I'm Bosch. An aspiring SWE with a huge passion for fighting games."
                     github="https://github.com/Boschio"
                     linkedin="https://www.linkedin.com/in/james-bosch/"
+                    website=""
                 />
 
-                <Card
+                <Profile
                     name="Nusrat Alam"
                     title="Networking & Outreach"
                     image="/images/Alam.jpeg"
-                    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non urna sit amet urna sollicitudin consequat."
+                    body="Senior finishing my CIS degree. I love reading and my favorite book is The Count of Monte Cristo."
                     github=""
-                    linkedin=""
+                    linkedin="https://www.linkedin.com/in/nusrat-alam-0768bb260/"
+                    website=""
                 />
 
-                <Card
+                <Profile
                     name="Izaac Gibson"
                     title="Treasurer"
                     image="/images/Gibson.jpeg"
                     body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non urna sit amet urna sollicitudin consequat."
                     github=""
-                    linkedin=""
+                    linkedin="https://www.linkedin.com/in/izaac-gibson-b92833254/"
+                    website=""
                 />
 
-                <Card
+                <Profile
                     name="Valerie McCree"
                     title="Secretary"
                     image="/images/McCree.jpg"
                     body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non urna sit amet urna sollicitudin consequat."
                     github=""
-                    linkedin=""
+                    linkedin="https://www.linkedin.com/in/valerie-mccree-460869b9/"
+                    website=""
                 />
 
-                <Card
+                <Profile
                     name="Xhulia Turkaj"
                     title="Community Relations"
                     image="/images/Turkaj.jpg"
                     body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non urna sit amet urna sollicitudin consequat."
                     github=""
-                    linkedin=""
+                    linkedin="https://www.linkedin.com/in/xhuliaturkaj/"
+                    website=""
                 />
 
-                <Card
+                <Profile
                     name="Ilma Zarin"
                     title="Memberships"
                     image="/images/Zarin.jpeg"
                     body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non urna sit amet urna sollicitudin consequat."
                     github=""
-                    linkedin=""
+                    linkedin="https://www.linkedin.com/in/ilma-zarin-a1641b190/"
+                    website=""
                 />
 
             </div>

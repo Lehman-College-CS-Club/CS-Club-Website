@@ -1,5 +1,6 @@
 ---
 import Hamburger from '../components/Hamburger.astro'
+import Button from '../components/Button.astro';
 ---
 
 <nav class='bg-slate-700 shadow-lg shadow-slate-500/50 font-bold flex justify-center sticky top-0 left-0 right-0 w-full z-50 py-0 mt-0 mb-10'>
@@ -22,7 +23,7 @@ import Hamburger from '../components/Hamburger.astro'
             <Hamburger class='flex justify-end' />
         </div>
         <div class="nav-links w-auto hidden md:flex">
-            <ul class="nav-list list-none flex p-0 justify-end">
+            <ul class="nav-list list-none flex flex-grow items-center p-0">
                 <li>
                     <a class='text-white hover:text-orange-400 px-3' href='/about'>About</a>
                 </li>
@@ -31,6 +32,9 @@ import Hamburger from '../components/Hamburger.astro'
                 </li>
                 <li>
                     <a class='text-white hover:text-orange-400 px-3' href='/resources'>Resources</a>
+                </li>
+                <li class='mx-3'>
+                    <Button text="Join the Club!" link="https://docs.google.com/forms/d/e/1FAIpQLSegGh7jgVYMj4B3ikJ5UxJwmWjN9P5q36-EFviz1Es2ua59Uw/viewform" target='_blank' />
                 </li>
             </ul>
         </div>
