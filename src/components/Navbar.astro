@@ -1,9 +1,11 @@
 ---
+import Hamburger from '../components/Hamburger.astro'
 ---
 
 <nav class='bg-slate-700 shadow-lg shadow-slate-500/50 font-bold flex justify-center sticky top-0 left-0 right-0 w-full z-50 py-0 mt-0 mb-10'>
-    <div class='container flex flex-row items-center justify-between'>
-        <a class='text-white hover:text-orange-400' href='/'>
+    <div class='navbar container flex flex-row items-center justify-between'>
+        <div class='container flex flex-row items-center justify-between'>
+            <a class='text-white hover:text-orange-400' href='/'>
             <div class='flex flex-row'>
                 <img
                     class="logo"
@@ -16,9 +18,11 @@
                     Lehman College<br/>Computer Science Club
                 </p>
             </div>
-        </a>
-        <div class="w-auto">
-            <ul class="list-none flex p-0 justify-end text-base">
+            </a>
+            <Hamburger class='flex justify-end' />
+        </div>
+        <div class="nav-links w-auto hidden md:flex">
+            <ul class="nav-list list-none flex p-0 justify-end">
                 <li>
                     <a class='text-white hover:text-orange-400 px-3' href='/about'>About</a>
                 </li>
