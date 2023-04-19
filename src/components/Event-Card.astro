@@ -13,7 +13,7 @@ const { title, description, link, location, date, time } = Astro.props;
 <div class='container w-auto max-w-7xl h-auto my-8 flex flex-col justify-center border shadow-lg rounded-lg border-slate-700 p-4 bg-slate-500/30'>
     <h2>{title}</h2>
     <p class='py-2'>{description}</p>
-    <a class='' href={link} target='_blank'>{link}</a>
+    <a class='font-bold' href={link} target='_blank'>{link}</a>
     <p class="font-bold">Location: {location}</p>
     <p class="font-bold">Time: {time}</p>
     <p class="font-bold">Date: {date}</p>
